@@ -1,2 +1,2 @@
-docs
+AppIterate API Documentation
 ====
