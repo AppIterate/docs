@@ -1,1 +1,2 @@
-site_name: AI - SDK Documentation
+site_name: 'AI - SDK Documentation'
+theme: 'readthedocs'
