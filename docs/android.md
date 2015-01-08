@@ -38,6 +38,21 @@ Create `appiterate.xml` in project's resources in xml folder
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
 
+### Initiate SDK
+
+Call `AppIterate.oncreate(Activity activity)` inside the `onCreate(Bundle savedInstancestate)` method of your application's main activity after calling `setContentView()`.
+
+```JAVA
+@Override
+protected void onCreate(Bundle savedInstancestate) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    // your code..
+    AppIterate.oncreate(this);
+    // rest of your code
+}
+```
+
 ### Data Driven Tests
 
 Create a test on the dashboard. Keep a note of Short name, which you mention at the time of creating a test. To retrieve parameters defined on your "Test Details" page, use getValue function defined in our SDK.
