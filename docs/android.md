@@ -53,6 +53,8 @@ protected void onCreate(Bundle savedInstancestate) {
 }
 ```
 
+### Push Notifications
+
 ### Data Driven Tests
 
 Create a test on the dashboard. Keep a note of Short name, which you mention at the time of creating a test. To retrieve parameters defined on your "Test Details" page, use getValue function defined in our SDK.
@@ -60,3 +62,7 @@ Create a test on the dashboard. Keep a note of Short name, which you mention at 
 ```JAVA
 getValue(Context context, String variableName, String defaultValue) : String
 ```
+
+### WYSIWYG Tests
+
+### In-App Messages
