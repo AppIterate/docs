@@ -23,7 +23,8 @@ Create `appiterate.xml` in project's resources in xml folder
 </appiterate>
 ```
 
-* APP_KEY: Retrieve your application key from the dashboard
+* APP_KEY: Retrieve your application key from the 
+<a href="http://dashboard.appiterate.com" target="_blank">dashboard</a>
 * debug: set this to 'true' during development and 'false' for production
 * variables: variables you will use for DDT testing
 
