@@ -57,6 +57,10 @@ protected void onCreate(Bundle savedInstancestate) {
 
 ### Push Notifications
 
+1. Get the `Project Number` for your application from your Google Developers Console.
+1. Set the Server API key in the SDK setup page on the [dashboard](http://dashboard.appiterate.com).
+1. Follow the steps given at [Google Developer] site and implement the GCM Client to implement push notifications in your application.
+
 ### Data Driven Tests
 
 Create a test on the dashboard. Keep a note of Short name, which you mention at the time of creating a test. To retrieve parameters defined on your "Test Details" page, use getValue function defined in our SDK.
