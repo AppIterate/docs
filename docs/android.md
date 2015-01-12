@@ -57,9 +57,35 @@ protected void onCreate(Bundle savedInstancestate) {
 
 ### Push Notifications
 
-1. Get the `Project Number` for your application from your Google Developers Console.
-1. Set the Server API key in the SDK setup page on the [dashboard](http://dashboard.appiterate.com).
-1. Follow the steps given at [Google Developer] site and implement the GCM Client to implement push notifications in your application.
+1. Obtain the `Project Number` for your application from your [Google Developers Console](https://cloud.google.com/console). Follow the instructions [here](http://developer.android.com/google/gcm/gs.html#create-proj) if you want to create a new project.
+
+2. Obtain the `Server API key` for your application. Follow the instructions [here](http://developer.android.com/google/gcm/gs.html#access-key) if you do not have one.
+
+3. Go to the SDK Setup page on the [dashboard](http://dashboard.appiterate.com) and upload the `Server API key`.
+
+4. Register the device with AppIterate using the `GCM registration ID`. Follow the instructions [here](http://developer.android.com/google/gcm/client.html#sample-register) to get the registration ID for a device.
+
+```JAVA
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    AppIterate.oncreate(this);
+
+    String regId = getGCMToken();   // returns the GCM Registration ID of the device
+    AppIterate.setGcmToken(this, regId);    // register device with AppIterate
+}
+```
+
+5. Additionally you can track received and viewed push notifications. (AppIterate tracks these automatically too)
+
+```JAVA
+AppIterate.track(getApplicationContext(), "your-event-name-for-recieve");
+```
+
+```JAVA
+AppIterate.track(getApplicationContext(), "your-event-name-for-view");
+```
 
 ### Data Driven Tests
 
