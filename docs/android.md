@@ -40,7 +40,7 @@ Create `appiterate.xml` in project's resources in xml folder
 
 ### Initiate SDK
 
-Call `AppIterate.oncreate(Activity activity)` inside the `onCreate(Bundle savedInstancestate)` method of your application's main activity after calling `setContentView()`.
+Call `AppIterate.oncreate(Activity activity)` inside the `onCreate(Bundle savedInstancestate)` method of your application's main activity after calling `setContentView()`. As a best practice you should do thiss for all activities of your application.
 
 ```JAVA
 @Override
