@@ -26,3 +26,23 @@
 * `APP_KEY`: Retrieve your application key from the
 <a href="http://dashboard.appiterate.com" target="_blank">dashboard</a>.
 * isDebug: set this to `YES` during development and `NO` for production.
+
+```objective-c
+-(BOOL)application:(UIApplication *)application
+ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ {
+   //Appiterate SDK Initialization
+   [Appiterate initAppiterate:@"b62d5a2057f21e5b465e5ccadc1c8f72" isDebug:YES];
+
+   self.window = [[[UIWindow alloc] initWithFrame:[[UIScreenmainScreen] bounds]]autorelease];
+
+   // Override point for customization after application launch.
+   self.viewController = [[[ViewController alloc]
+   initWithNibName:@"ViewController" bundle:nil] autorelease];
+   self.window.rootViewController = self.viewController;
+
+   [self.window makeKeyAndVisible];
+
+   return YES;
+ }
+```
