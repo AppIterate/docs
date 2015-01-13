@@ -22,6 +22,7 @@
 [Appiterate initAppiterate:@"APP_KEY" isDebug:YES]
 ```
 
-* APP_KEY: Retrieve your application key from the
+* The SDK must be initalized before initializing application window and user interfaces.
+* `APP_KEY`: Retrieve your application key from the
 <a href="http://dashboard.appiterate.com" target="_blank">dashboard</a>.
 * isDebug: set this to `YES` during development and `NO` for production.
