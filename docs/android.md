@@ -2,6 +2,8 @@
 
 ## SDK setup
 
+Download the [Android SDK](http://appiterate.com/android/latest)
+
 ### Copy Files
 
 * Copy `appiteratesdk.jar` to project's lib folder and add its path in your build path
