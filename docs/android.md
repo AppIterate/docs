@@ -89,6 +89,15 @@ AppIterate.track(getApplicationContext(), "your-event-name-for-recieve");
 AppIterate.track(getApplicationContext(), "your-event-name-for-view");
 ```
 
+### In-App Messages
+
+* In-App Messages are bound to a particlar `goal`. Whenever a `goal` is tracked associated In-App Messages are triggered.
+* To trigger an In-App Message for a particular `goal` use the following code.
+
+```JAVA
+
+```
+
 ### Data Driven Tests
 
 Create a test on the dashboard. Keep a note of Short name, which you mention at the time of creating a test. To retrieve parameters defined on your "Test Details" page, use getValue function defined in our SDK.
@@ -98,5 +107,3 @@ getValue(Context context, String variableName, String defaultValue) : String
 ```
 
 ### WYSIWYG Tests
-
-### In-App Messages
