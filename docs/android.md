@@ -79,7 +79,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-5. Additionally you can track received and viewed push notifications. (AppIterate tracks these automatically too)
+* Additionally you can track received and viewed push notifications. (AppIterate tracks these automatically too)
 
 ```JAVA
 AppIterate.track(getApplicationContext(), "your-event-name-for-recieve");
