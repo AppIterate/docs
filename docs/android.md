@@ -98,6 +98,19 @@ AppIterate.track(getApplicationContext(), "your-event-name-for-view");
 AppIterate.track(Context context, String goalId, TestCallback_inapp callbackObject)
 ```
 
+* Where
+    * `context`: Context of the Activity
+    * `goalId`: Goal identifier for the In-App Message
+    * `callbackObject`: Callback object for the call to actions in the In-App Message.
+
+```JAVA
+callbackObject = new TestCallback_inapp() {
+    public void def(JSONObject object) {
+        // do something with your callback
+    }
+}
+```
+
 ### Data Driven Tests
 
 Create a test on the dashboard. Keep a note of Short name, which you mention at the time of creating a test. To retrieve parameters defined on your "Test Details" page, use getValue function defined in our SDK.
