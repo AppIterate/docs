@@ -95,7 +95,7 @@ AppIterate.track(getApplicationContext(), "your-event-name-for-view");
 * To trigger an In-App Message for a particular `goal` use the following code.
 
 ```JAVA
-
+AppIterate.track(Context context, String goalId, TestCallback_inapp callbackObject)
 ```
 
 ### Data Driven Tests
