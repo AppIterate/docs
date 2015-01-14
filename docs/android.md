@@ -99,8 +99,8 @@ AppIterate.track(Context context, String goalId, TestCallback_inapp callbackObje
 ```
 
 * Where
-    * `context`: Context of the Activity
-    * `goalId`: Goal identifier for the In-App Message
+    * `context`: Context of the Activity.
+    * `goalId`: Goal identifier for the In-App Message.
     * `callbackObject`: Callback object for the call to actions in the In-App Message.
 
 ```JAVA
@@ -110,6 +110,16 @@ callbackObject = new TestCallback_inapp() {
     }
 }
 ```
+
+* Add the following lines in the `onDestroy` method of the Activities in which In-App Messages will be displayed
+
+```JAVA
+@Override
+protected void onDestroy() {
+    AppIterate.onDestroy(this);
+}
+```
+
 
 ### Data Driven Tests
 
