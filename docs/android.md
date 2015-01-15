@@ -130,3 +130,18 @@ getValue(Context context, String variableName, String defaultValue) : String
 ```
 
 ### WYSIWYG Tests
+
+* A WYSIWYG test uses a screen uploaded from your application. To upload a screen override the `onCreateOptionsMenu` and `onOptionsItemSelected` method of the Activity.
+
+```JAVA
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+    AppIterate.onOptionsMenu(this, menu);
+    return true;
+}
+
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    return AppIterate.onOptionsItemSelected(this, item);
+}
+```
