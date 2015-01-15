@@ -160,3 +160,5 @@ public boolean dispatchTouchEvent(MotionEvent event) {
 * This process needs to be repeated for all `Activities` where WYSIWYG tests are required.
 
 * Launch the application and tap the `Menu` button (or double tap). Tap `Appiterate - Upload Screen Data` to upload the current `Activity` to AppIterate servers.
+
+* `Ensure` to replace the implementation of `onCreateOptionsMenu` and `onOptionsItemSelected` with your applications logic after uploading the screens.
