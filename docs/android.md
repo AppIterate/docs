@@ -145,3 +145,5 @@ public boolean onOptionsItemSelected(MenuItem item) {
     return AppIterate.onOptionsItemSelected(this, item);
 }
 ```
+
+* If you are using a device which does not have a `Menu` buttton, you can invoke the above menu on double tap.
