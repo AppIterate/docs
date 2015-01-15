@@ -103,7 +103,7 @@ AppIterate.track(Context context, String goalId, TestCallback_inapp callbackObje
     * `goalId`: Goal identifier for the In-App Message.
     * `callbackObject`: Callback object for the call to actions in the In-App Message.
 
-```JAVA
+```java
 callbackObject = new TestCallback_inapp() {
     public void def(JSONObject object) {
         // do something with your callback
@@ -147,3 +147,12 @@ public boolean onOptionsItemSelected(MenuItem item) {
 ```
 
 * If you are using a device which does not have a `Menu` buttton, you can invoke the above menu on double tap.
+
+```java
+@Override
+public boolean dispatchTouchEvent(MotionEvent event) {
+    super.dispatchTouchEvent(event);
+    AppIterate.getGestureDetector().onTouchEvent(event);
+    return true;
+}
+```
