@@ -211,3 +211,9 @@ AppIterate.setProfileData(Context context, String key, String value) : void
 ```JAVA
 AppIterate.setUserId(Context context, String identifier) : void
 ```
+
+* The SDK periodically syncs data with AppIterate servers. The default sync duration is `120 seconds`. To change this duration invoke `AppIterate.setsyncDuration(Activity activity, int seconds)`.
+
+```java
+AppIterate.setsyncDuration(this, 100);
+```
