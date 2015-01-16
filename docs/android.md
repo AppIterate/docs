@@ -164,7 +164,6 @@ public boolean dispatchTouchEvent(MotionEvent event) {
 * `Ensure` to replace the implementation of `onCreateOptionsMenu` and `onOptionsItemSelected` with your applications logic after uploading the screens.
 
 * You can now create WYSIWYG tests on the [dasboard](http://dashboard.appiterate.com).
-
     * Select the screen you want to test on.
     * Create multiple variations of this screen.
     * You can verify these variation on your `test devices`.
