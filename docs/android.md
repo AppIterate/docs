@@ -197,3 +197,11 @@ protected void onStop() {
    AppIterate.onStop(this);
 }
 ```
+
+### Miscellaneous Options
+
+* Set custom key-values or profile data for devices and sync them with AppIterate servers. These values can be used for segmentation.
+
+```JAVA
+AppIterate.setProfileData(Context context, String key, String value) : void
+```
