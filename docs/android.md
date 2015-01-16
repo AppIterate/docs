@@ -205,3 +205,9 @@ protected void onStop() {
 ```JAVA
 AppIterate.setProfileData(Context context, String key, String value) : void
 ```
+
+* Set custom user identifiers
+
+```JAVA
+AppIterate.setUserId(Context context, String identifier) : void
+```
