@@ -217,3 +217,15 @@ AppIterate.setUserId(Context context, String identifier) : void
 ```java
 AppIterate.setsyncDuration(this, 100);
 ```
+
+* To force a sync use:
+
+```java
+AppIterate.flush(Activity activity);
+```
+
+* To for re-load variations of an A/B test
+
+```java
+AppIterate.loadVariations(Activity activity);
+```
