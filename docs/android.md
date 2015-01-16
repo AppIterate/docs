@@ -179,3 +179,21 @@ AppIterate.track(Context context, String goalId, JSONObject userData) : void
 ```
 
 * `userData` is an optional argument.
+
+### Tracking Session time
+
+In order to start session time for your application call the `AppIterate.onStart(Activity activity);` and `AppIterate.onStop(Activity activity);` in the `onStart()` and `onStop()` methods respectively of Activities in your application.
+
+```JAVA
+@Override
+protected void onStart() {
+   super.onStart();
+   AppIterate.onStart(this);
+}
+
+@Override
+protected void onStop() {
+   super.onStop();
+   AppIterate.onStop(this);
+}
+```
