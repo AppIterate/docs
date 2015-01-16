@@ -168,3 +168,12 @@ public boolean dispatchTouchEvent(MotionEvent event) {
     * Create multiple variations of this screen.
     * You can verify these variation on your `test devices`.
     * In order to see the variation on the your `test device` press the `Menu `button (or double tap) and tap on `Refresh Variation`.
+
+
+### Tracking Events and Goals
+
+Goals and events can be used to user activity and behavior. Create goals on the [dashboard](http://dashboard.appiterate.com); A goal has an indentifier and a name. The `goal identifier` is used to track goals inside your application.
+
+```JAVA
+AppIterate.track(Context context, String goalId, JSONObject userData) : void
+```
