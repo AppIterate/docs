@@ -177,3 +177,5 @@ Goals and events can be used to user activity and behavior. Create goals on the 
 ```JAVA
 AppIterate.track(Context context, String goalId, JSONObject userData) : void
 ```
+
+* `userData` is an optional argument.
