@@ -2,7 +2,7 @@
 
 ## SDK setup
 
-Download the [Android SDK](http://appiterate.com/android/latest)
+Download the [Android SDK](http://dashboard.appiterate.com)
 
 ### Copy Files
 
@@ -29,8 +29,8 @@ Create `appiterate.xml` in project's resources in xml folder
 
 * `APP_KEY`: Retrieve your application key from the
 <a href="http://dashboard.appiterate.com" target="_blank">dashboard</a>
-* debug: set this to 'true' during development and 'false' for production
-* variables: variables you will use for DDT testing
+* `debug`: set this to 'true' during development and 'false' for production
+* `variables`: variables you will use for DDT testing
 
 ### Adding Required Permission in AndroidManifest.xml
 
@@ -163,7 +163,7 @@ public boolean dispatchTouchEvent(MotionEvent event) {
 
 * `Ensure` to replace the implementation of `onCreateOptionsMenu` and `onOptionsItemSelected` with your applications logic after uploading the screens.
 
-* You can now create WYSIWYG tests on the [dasboard](http://dashboard.appiterate.com).
+* You can now create WYSIWYG tests on the [dasboard](http://dashboard.appiterate.com)
     * Select the screen you want to test on.
     * Create multiple variations of this screen.
     * You can verify these variation on your `test devices`.
