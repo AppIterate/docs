@@ -48,3 +48,5 @@
 ```
 
 ## Push Notifications
+
+* Upload your applications' SSL certificate and key files (*.pem) to AppIterate servers from the [dashboard](http://dashboard.appiterate.com).
