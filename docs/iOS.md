@@ -52,16 +52,16 @@
 * Upload your applications' SSL certificate and key files (*.pem) to AppIterate servers from the [dashboard](http://dashboard.appiterate.com).
 * Register the deives with the APNS service for push notifications
 
-```
+```objective-c
 //Send received push token to our SDK
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
-      [Appiterate sendPushToken:devToken];
-      // must to receive push notifications via Appiterate dashboard
- }
+  [Appiterate sendPushToken:devToken];
+  // must to receive push notifications via Appiterate dashboard
+}
+
 //Send received push message to our SDK
--(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
- {
-   [Appiterate application:application receivedRemoteNotification:userInfo];
-   //add this line to enable us to send track data for analytics
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+  [Appiterate application:application receivedRemoteNotification:userInfo];
+  //add this line to enable us to send track data for analytics
 }
 ```
