@@ -71,5 +71,5 @@
 In order to integrate an in-app message, create a message from dashboard and attach a goal to it. While creating an in-app message, user has two choices, either specify a web url which will be opened in safari once user clicks message or specify key-value pairs which user gets as dictionary in callback data.
 
 ```objective-c
-
+[Appiterate trackGoal:@"nknj3kn" onScreen:self withCallback:nil];
 ```
