@@ -80,5 +80,5 @@ void (^callback)(NSDictionary*) = ^(NSDictionary * data) {
   NSLog(@"val1:%@",val1);
   // use values received
 };
-[Appiterate trackGoal:@"nknj3kn" onScreen:self withCallback:callback];
+[Appiterate trackGoal:@"{{GOAL_ID}}" onScreen:self withCallback:callback];
 ```
