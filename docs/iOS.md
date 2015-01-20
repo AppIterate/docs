@@ -75,4 +75,10 @@ In order to integrate an in-app message, create a message from dashboard and att
 ```
 
 ```objective-c
+void (^callback)(NSDictionary*) = ^(NSDictionary * data) {
+  NSString * val1 = [data objectForKey:@"key1"];
+  NSLog(@"val1:%@",val1);
+  // use values received
+};
+[Appiterate trackGoal:@"nknj3kn" onScreen:self withCallback:callback];
 ```
