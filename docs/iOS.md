@@ -65,3 +65,5 @@
   //add this line to enable us to send track data for analytics
 }
 ```
+
+## In-App Messages
