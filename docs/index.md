@@ -5,6 +5,8 @@ The documentation is organized into sections which contain instruction to setup 
 
 ## [Android](android.md)
 
-<!--- Need to add sub heading of android docs -->
+<!--- Need to add sub headings of android docs -->
 
 ## [iOS](iOS.md)
+
+<!--- Need to add sub headings of iOS docs -->
